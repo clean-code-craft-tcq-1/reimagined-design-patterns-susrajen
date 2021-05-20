@@ -9,12 +9,12 @@ Give a summary description of Four design patterns that you choose from the foll
 
 > Do not add diagrams, and do not try to give a complete description of the patterns as found in the books. Rather think of how you would explain the essential ideas of these patterns in a few sentences to a colleague while drinking coffee.
 
-# Decorator pattern -
+## Decorator pattern -
 
-# Summary:
+ **Summary:
     Decorator pattern is used for extension at runtime and to avoid overuse of inheritance
 
-# what kind of problem(s) you can solve with that pattern and when you use it, maybe with a short example
+**What kind of problem(s) you can solve with that pattern and when you use it, maybe with a short example
 
     Give additional responsibilities to an object with less effort (without any code changes)
 
@@ -26,24 +26,24 @@ Give a summary description of Four design patterns that you choose from the foll
     The requirements for each customer may vary, a customer may buy a gift without wrapping it also.
     The wrappers are added at runtime as each customer's wish. This is when decorator pattern is used.
 
-# Basic idea of the pattern:
+**Basic idea of the pattern:
     Add additional responsibilities to an object at runtime.
 
-# Advantage:
+**Advantage:
 
     Decorators can be used to get different combinations at runtime.
 
-# Disadvantage:
+**Disadvantage:
 
     If there are only few decorator to be used, the pattern can be an over engineered solution.
 
 
-# Adapter pattern -
+## Adapter pattern -
 
-# Summary:
+**Summary:
    Adapter pattern is used when two incompatible objects want to communicate with each other. Adapter class is actually a wrapper class.
 
-# What kind of problem(s) you can solve with that pattern and when you use it, maybe with a short example
+**What kind of problem(s) you can solve with that pattern and when you use it, maybe with a short example
 
     When there are two independent objects and they are incompatible, Adapter pattern can be used to act as a bridge for communication.
 
@@ -58,24 +58,24 @@ Give a summary description of Four design patterns that you choose from the foll
     So now BoschEmployee can also attend TCQClasses.
 
 
-# Basic idea of the pattern:
+**Basic idea of the pattern:
     When you want a class to make use of features of the class with incompatible interface.
 
-# Advantage:
+**Advantage:
 
     Reusability of existing functionality.
     You can also introduce new functionalities without tampering or doing any code changes to the existing classes.
 
-# Disadvantage:
+**Disadvantage:
 
     Overuse of the pattern may lead to having a lot of adaptations before the desired type is reached.
 
-# Memento pattern -
+## Memento pattern -
 
-# Summary:
+**Summary:
   Memento design pattern is used to implement the undo operation
 
-# What kind of problem(s) you can solve with that pattern and when you use it, maybe with a short example
+**What kind of problem(s) you can solve with that pattern and when you use it, maybe with a short example
 
     Mainly used for database transactions to preserve history and rollback on failures.
 
@@ -87,25 +87,26 @@ Give a summary description of Four design patterns that you choose from the foll
 
     Whenever the update method is invoked, the transaction will be saved in transactionHistory, so in case of any failure, it can be reset.
 
-# Basic idea of the pattern:
+**Basic idea of the pattern:
+
     When you want a class to keep track of all the changes, so you can implement the rollback operation.
 
-# Advantage:
+**Advantage:
 
     When there is a failure, there is a need to save previous state and Memento pattern is of great help.
 
-# Disadvantage:
+**Disadvantage:
 
     Whenever the data stored for each transaction is huge, the Memento pattern leads to high memory usage.
 
-# Prototype pattern -
+## Prototype pattern -
 
-# Summary:
+**Summary:
   Prototype pattern means copying something that already exists.
   When you want to create an object similar to another object, certain fields my be private and inaccessible. Prototype pattern 
   enables easy cloning of objects.
 
-# What kind of problem(s) you can solve with that pattern and when you use it, maybe with a short example
+**What kind of problem(s) you can solve with that pattern and when you use it, maybe with a short example
 
     Prototype pattern is used when object creation is costly.
     And also when you want to hide how the object is created.
@@ -115,14 +116,14 @@ Give a summary description of Four design patterns that you choose from the foll
     When you want to add similar objects to different shopping carts, prototyping can be used.
 
 
-# Basic idea of the pattern:
+**Basic idea of the pattern:
     When you want a class to keep track of all the changes, so you can implement the rollback operation.
 
-# Advantage:
+**Advantage:
 
     When creation is costly, we use prototype pattern there by saving time and improving performance.
 
 
-# Disadvantage:
+**Disadvantage:
 
     Whenever there is a circular reference, cloning such objects will be difficult.
